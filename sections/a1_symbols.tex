@@ -1,0 +1,73 @@
+\NewDocumentCommand \fig       { D[]{ht} m }{  
+    \ifaddfigure        
+        \begin{figure}[#1]                     
+            \centering          
+            {#2}
+        \end{figure}                       
+    \fi     
+}                  
+\NewDocumentCommand \widefig   { D[]{ht} m m m }{
+    \ifaddfigure
+        \begin{figure*}[#1]
+            \centering
+            {#3}
+            \caption{#2}
+            {#4}
+        \end{figure*}
+    \fi
+}
+\NewDocumentCommand \tab       { D[]{ht} m m }{ 
+    \begin{table}[#1]
+        \caption{#2}
+        \centering
+        {#3}
+    \end{table}    
+}                    
+\NewDocumentCommand \widetab   { D[]{ht} m m }{
+    \begin{table*}[#1]
+        \caption{#2} 
+        \centering
+        {#2}
+    \end{table*}
+}
+\NewDocumentCommand \alg       { D[]{ht} m m }{
+    \SetAlgoCaptionLayout{capleft}
+    \setlength{\algomargin}{1.2em}  % left space of algo contents
+    \SetAlgoCaptionSeparator{ }
+    \begin{algorithm}[{#1}]
+        \DontPrintSemicolon
+        \SetKwInOut{Input}{\bfseries Input}  % \Input{xxx}
+        \SetKwInOut{Output}{\bfseries Output}  % \Output{xxx}
+        \caption{{#2}}
+        {#3}  % \ForEach{xxx}{ xxx\; \If{xxx}{ xxx\; } }
+    \end{algorithm}
+}
+\NewDocumentCommand \equ       { m }{
+    \begin{equation}
+        {#1}
+    \end{equation}
+}
+\NewDocumentCommand \lst       { m }{
+    \begin{itemize}
+        {#1}
+    \end{itemize}
+}
+\NewDocumentCommand \enu       { m }{
+    \begin{enumerate}
+        {#1}
+    \end{enumerate}
+}
+
+\NewDocumentCommand \refalg    { m }{Algorithm~\ref{#1}}
+\NewDocumentCommand \refequ    { m }{Equation~\ref{#1}}
+\NewDocumentCommand \reffig    { m }{Figure~\ref{#1}}
+\NewDocumentCommand \reftab    { m }{Table~\ref{#1}}
+\NewDocumentCommand \refsec    { m }{Section~\ref{#1}}
+\NewDocumentCommand \refapp    { m }{Appendix \ref{#1}}
+\NewDocumentCommand \refdef    { m }{Definition \ref{#1}}
+\NewDocumentCommand \refthm    { m }{Theorem \ref{#1}}
+\NewDocumentCommand \refpro    { m }{Proposition \ref{#1}}
+\NewDocumentCommand \reflem    { m }{Lemma \ref{#1}}
+\NewDocumentCommand \refrem    { m }{Remark \ref{#1}}
+
+\NewDocumentCommand \hlt       { D[]{blue} m }{\sethlcolor{#1} \hl{#2}}
