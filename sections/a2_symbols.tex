@@ -1,3 +1,4 @@
+% common cmmands
 \NewDocumentCommand \fig       { D[]{ht} m }{  
     \ifaddfigure        
         \begin{figure}[#1]                     
@@ -72,11 +73,20 @@
 
 \NewDocumentCommand \hlt       { D[]{blue} m }{\sethlcolor{#1} \hl{#2}}
 
+
 % User-defined commands
-% \NewDocumentCommand \prompt    { D[]{blue} m }{\sethlcolor{#1} \hl{#2}}
-% \NewDocumentCommand \gpt       { D[]{yellow} m }{\sethlcolor{#1} \hl{#2}}
-\newcommand{\prompt}[1]{\textcolor{blue}{#1}}
-\newcommand{\gpt}[1]{\textcolor{yellow}{#1}}
+\newcommand{\prompt}[1]{
+\vspace{10pt}
+\begin{promptbox}
+s #1
+\end{promptbox}
+}
+\newcommand{\gpt}[1]{
+\vspace{10pt}
+\begin{gptbox}
+s #1
+\end{gptbox}
+}
 
 \NewDocumentCommand \gptc { D[]{cyan} m }{ \textcolor{#1}{#2} }
 
@@ -86,7 +96,3 @@
         \sethlcolor{#1}\hl{#2}
     \end{tcolorbox}%
 }
-
-\usepackage{listings}
-\usepackage{graphicx}
-\usepackage{xcolor}
