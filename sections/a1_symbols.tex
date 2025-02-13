@@ -62,7 +62,7 @@
 \NewDocumentCommand \refequ    { m }{Equation~\ref{#1}}
 \NewDocumentCommand \reffig    { m }{Figure~\ref{#1}}
 \NewDocumentCommand \reftab    { m }{Table~\ref{#1}}
-\NewDocumentCommand \refsec    { m }{Section~\ref{#1}}
+\NewDocumentCommand \refsec    { m }{第\ref{#1}节}
 \NewDocumentCommand \refapp    { m }{Appendix \ref{#1}}
 \NewDocumentCommand \refdef    { m }{Definition \ref{#1}}
 \NewDocumentCommand \refthm    { m }{Theorem \ref{#1}}
@@ -71,3 +71,22 @@
 \NewDocumentCommand \refrem    { m }{Remark \ref{#1}}
 
 \NewDocumentCommand \hlt       { D[]{blue} m }{\sethlcolor{#1} \hl{#2}}
+
+% User-defined commands
+% \NewDocumentCommand \prompt    { D[]{blue} m }{\sethlcolor{#1} \hl{#2}}
+% \NewDocumentCommand \gpt       { D[]{yellow} m }{\sethlcolor{#1} \hl{#2}}
+\newcommand{\prompt}[1]{\textcolor{blue}{#1}}
+\newcommand{\gpt}[1]{\textcolor{yellow}{#1}}
+
+\NewDocumentCommand \gptc { D[]{cyan} m }{ \textcolor{#1}{#2} }
+
+% 定义带变量的命令
+\NewDocumentCommand \customPrompt { m m }{%
+    \begin{tcolorbox}[boxrule = 0pt,arc = 0pt,left = 0pt,right = 0pt,top = 0pt,bottom = 0pt,colback = #1!20]
+        \sethlcolor{#1}\hl{#2}
+    \end{tcolorbox}%
+}
+
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{xcolor}

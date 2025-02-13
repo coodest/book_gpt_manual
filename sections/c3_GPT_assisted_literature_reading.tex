@@ -1,0 +1,133 @@
+\section{GPT辅助文献查找和阅读}
+
+\subsection{快速概括论文内容}
+\begin{itemize}
+    \item \textbf{方法}：将论文的标题、摘要和引言部分输入AI工具，要求其用简洁的语言总结论文的主要观点、研究方法和结论。
+    \item \textbf{示例}：
+    \begin{itemize}
+        \item \gptc{请用简洁的语言概括以下论文的主要观点、研究方法和结论：《基于深度学习的图像识别技术研究》。}
+    \end{itemize}
+    \item \textbf{输出示例}：
+    \begin{itemize}
+        \item \gptc{本文主要研究了基于深度学习的图像识别技术，通过卷积神经网络（CNN）对大量图像数据进行训练，实现了高精度的图像分类和识别。实验结果表明，该技术在多个标准数据集上表现出色，准确率超过95\%。}
+    \end{itemize}
+\end{itemize}
+
+\subsection{提取关键信息}
+\begin{itemize}
+    \item \textbf{方法}：将论文的关键部分（如方法、结果、讨论）输入AI工具，要求其提取关键信息和要点。
+    \item \textbf{示例}：
+    \begin{itemize}
+        \item \gptc{请提取以下论文的关键信息和要点：《深度学习在自然语言处理中的应用研究》。}
+    \end{itemize}
+    \item \textbf{输出示例}：
+    \begin{itemize}
+        \item \gptc{关键信息：}
+        \begin{itemize}
+            \item \gptc{研究背景：自然语言处理（NLP）在人工智能领域的重要性。}
+            \item \gptc{研究方法：使用Transformer架构的预训练模型（如BERT、GPT）进行文本分类、情感分析和机器翻译。}
+            \item \gptc{实验结果：在多个NLP任务上，预训练模型的性能显著优于传统方法。}
+            \item \gptc{结论：预训练模型在自然语言处理领域具有广泛的应用前景。}
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsection{解析专业术语}
+\begin{itemize}
+    \item \textbf{方法}：将论文中的专业术语提取出来，让AI工具进行详细解释。
+    \item \textbf{示例}：
+    \begin{itemize}
+        \item \gptc{请解释以下专业术语：卷积神经网络（CNN）。}
+    \end{itemize}
+    \item \textbf{输出示例}：
+    \begin{itemize}
+        \item \gptc{卷积神经网络（Convolutional Neural Network, CNN）是一种深度学习模型，主要用于图像识别和处理。它通过卷积层、池化层和全连接层的组合，自动提取图像中的特征，具有强大的特征学习能力。}
+    \end{itemize}
+\end{itemize}
+
+\subsection{生成结构化笔记}
+\begin{itemize}
+    \item \textbf{方法}：要求AI工具根据论文内容生成结构化的笔记，包括研究问题、方法、结果和结论。
+    \item \textbf{示例}：
+    \begin{itemize}
+        \item \gptc{请为这篇论文生成一个基于IMRAD（引言、方法、结果、讨论）的笔记：《基于深度学习的图像识别技术研究》。}
+    \end{itemize}
+    \item \textbf{输出示例}：
+    \begin{itemize}
+        \item \gptc{引言：}
+        \begin{itemize}
+            \item \gptc{研究背景：图像识别在计算机视觉领域的应用。}
+            \item \gptc{研究目的：提高图像识别的准确性和效率。}
+        \end{itemize}
+        \item \gptc{方法：}
+        \begin{itemize}
+            \item \gptc{数据集：使用ImageNet数据集进行训练和测试。}
+            \item \gptc{模型：采用卷积神经网络（CNN）架构。}
+            \item \gptc{实验设计：对比不同网络结构的性能。}
+        \end{itemize}
+        \item \gptc{结果：}
+        \begin{itemize}
+            \item \gptc{准确率：在测试集上达到95\%的准确率。}
+            \item \gptc{效率：训练时间比传统方法缩短了30\%。}
+        \end{itemize}
+        \item \gptc{讨论：}
+        \begin{itemize}
+            \item \gptc{优势：模型具有良好的泛化能力和高准确率。}
+            \item \gptc{局限性：对计算资源要求较高。}
+            \item \gptc{未来工作：探索更高效的网络结构和优化算法。}
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsection{对比分析文献}
+\begin{itemize}
+    \item \textbf{方法}：通过指令让AI工具对比不同文献的研究设计、样本大小、结果和结论，分析它们在研究方法和发现上的异同点。
+    \item \textbf{示例}：
+    \begin{itemize}
+        \item \gptc{请对比以下两篇文献的研究设计、样本大小、结果和结论，并分析它们在研究方法和发现上的异同点：}
+        \begin{itemize}
+            \item \gptc{文献1：《基于深度学习的图像识别技术研究》}
+            \item \gptc{文献2：《传统机器学习在图像识别中的应用》}
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{输出示例}：
+    \begin{itemize}
+        \item \gptc{研究设计：}
+        \begin{itemize}
+            \item \gptc{文献1：使用卷积神经网络（CNN）进行图像识别。}
+            \item \gptc{文献2：使用支持向量机（SVM）进行图像识别。}
+        \end{itemize}
+        \item \gptc{样本大小：}
+        \begin{itemize}
+            \item \gptc{文献1：使用ImageNet数据集，包含超过1000万张图像。}
+            \item \gptc{文献2：使用自建数据集，包含10万张图像。}
+        \end{itemize}
+        \item \gptc{结果：}
+        \begin{itemize}
+            \item \gptc{文献1：准确率达到95\%。}
+            \item \gptc{文献2：准确率达到85\%。}
+        \end{itemize}
+        \item \gptc{结论：}
+        \begin{itemize}
+            \item \gptc{文献1：CNN在图像识别中表现出色，适合大规模数据集。}
+            \item \gptc{文献2：SVM在小规模数据集上表现良好，但对大规模数据集的泛化能力有限。}
+        \end{itemize}
+        \item \gptc{异同点：}
+        \begin{itemize}
+            \item \gptc{相同点：两者都用于图像识别任务。}
+            \item \gptc{不同点：CNN在处理大规模数据集时表现更好，而SVM在小规模数据集上效率更高。}
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsection{文献管理与总结}
+\begin{itemize}
+    \item \textbf{方法}：在阅读完每篇重要文献后，使用AI工具进行总结，并将总结内容保存在文献管理工具（如Zotero、Mendeley）中。
+    \item \textbf{示例}：
+    \begin{itemize}
+        \item \gptc{请为这篇论文生成一个简要总结，并提取关键引用信息：}
+        \begin{itemize}
+            \item \gptc{文献：《基于深度学习的图像识别技术研究》}
+            \item \gptc{引用格式：APA}
+        \end{itemize}
+    \end
