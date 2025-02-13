@@ -10,41 +10,41 @@
 \textbf{操作流程：}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+  \def\labelenumi{\arabic{enumi}.}
 
-\item
-  访问\href{https://huggingface.co/spaces/timbrooks/instruct-pix2pix}{InstructPix2Pix
-  - a Hugging Face Space by
-  timbrooks}，这是一个根据提示词将图片修改变换的模型
-\item
-  填写参数，下图中的红框是上传你要修改的图片；蓝框则是你的提示词（推荐使用英语尽可能简短地描述你的需求）；绿框则是一些参数的调整，Text
-  CFG是提示词的权重，Image
-  CFG是图片的权重，读者可以通过调整这两个主要参数来实现目标，但同时要注意两者之间的平衡，否则会导致图像失真或者生成完全不符合要求的图片。
+  \item
+        访问\href{https://huggingface.co/spaces/timbrooks/instruct-pix2pix}{InstructPix2Pix
+          - a Hugging Face Space by
+          timbrooks}，这是一个根据提示词将图片修改变换的模型
+  \item
+        填写参数，下图中的红框是上传你要修改的图片；蓝框则是你的提示词（推荐使用英语尽可能简短地描述你的需求）；绿框则是一些参数的调整，Text
+        CFG是提示词的权重，Image
+        CFG是图片的权重，读者可以通过调整这两个主要参数来实现目标，但同时要注意两者之间的平衡，否则会导致图像失真或者生成完全不符合要求的图片。
 \end{enumerate}
 
 \centering
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
-    \centering %图片居中
-    \includegraphics[width=0.7\textwidth]{sections/images/image-20250211145347208.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-    \caption{参数调整} %最终文档中希望显示的图片标题
-    \label{Fig.main1} %用于文内引用的标签
+  \centering %图片居中
+  \includegraphics[width=0.7\textwidth]{assets/figures/image-20250211145347208.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+  \caption{参数调整} %最终文档中希望显示的图片标题
+  \label{Fig.main1} %用于文内引用的标签
 \end{figure}%结束环境
 
 例如：将云南师范大学的照片转化为动漫风格，我的参数和提示词如下图
 \centering
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
-    \centering %图片居中
-    \includegraphics[width=0.7\textwidth]{sections/images/9c6c2ff0409374eed093b8ec3447507.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-    \caption{渲染过程} %最终文档中希望显示的图片标题
-    \label{Fig.main1} %用于文内引用的标签
+  \centering %图片居中
+  \includegraphics[width=0.7\textwidth]{assets/figures/9c6c2ff0409374eed093b8ec3447507.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+  \caption{渲染过程} %最终文档中希望显示的图片标题
+  \label{Fig.main1} %用于文内引用的标签
 \end{figure}%结束环境
 
 \centering
 \begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
-    \centering %图片居中
-    \includegraphics[width=0.7\textwidth]{sections/images/change.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-    \caption{渲染效果图} %最终文档中希望显示的图片标题
-    \label{Fig.main1} %用于文内引用的标签
+  \centering %图片居中
+  \includegraphics[width=0.7\textwidth]{assets/figures/change.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+  \caption{渲染效果图} %最终文档中希望显示的图片标题
+  \label{Fig.main1} %用于文内引用的标签
 \end{figure}%结束环境
 
 可以看到还是改变了一点风格，读者可以继续尝试不断修改参数来达到预期的目标
