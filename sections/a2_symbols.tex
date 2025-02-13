@@ -1,21 +1,17 @@
-% common cmmands
+% common commands
 \NewDocumentCommand \fig       { D[]{ht} m }{  
-    \ifaddfigure        
-        \begin{figure}[#1]                     
-            \centering          
-            {#2}
-        \end{figure}                       
-    \fi     
+    \begin{figure}[#1]                     
+        \centering          
+        {#2}
+    \end{figure}                       
 }                  
 \NewDocumentCommand \widefig   { D[]{ht} m m m }{
-    \ifaddfigure
-        \begin{figure*}[#1]
-            \centering
-            {#3}
-            \caption{#2}
-            {#4}
-        \end{figure*}
-    \fi
+    \begin{figure*}[#1]
+        \centering
+        {#3}
+        \caption{#2}
+        {#4}
+    \end{figure*}
 }
 \NewDocumentCommand \tab       { D[]{ht} m m }{ 
     \begin{table}[#1]
@@ -77,12 +73,12 @@
 % User-defined commands
 \newcommand{\prompt}[1]{
 \begin{promptbox}
-s #1
+s \footnotesize{#1}
 \end{promptbox}
 }
 \newcommand{\gpt}[1]{
 \begin{gptbox}
-s #1
+s \footnotesize{#1}
 \end{gptbox}
 }
 
