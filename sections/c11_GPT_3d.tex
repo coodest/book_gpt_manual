@@ -1,9 +1,6 @@
-\hypertarget{ux6848ux4f8b3ux5c06ux62cdux6444ux7684ux7167ux7247ux4feeux6539ux4e3aux52a8ux6f2bux98ceux683c}{%
-
-
-\hypertarget{ux6848ux4f8b43dux6587ux7269ux91cdux5efa}{%
-\subsubsection{案例4：3D文物重建}\label{ux6848ux4f8b43dux6587ux7269ux91cdux5efa}}
-
+\hypertarget{ux6848ux4f8b2ux5386ux53f2ux8fdbux7a0bux6d41ux7a0bux56fe}{%
+\section{AI建模}
+\subsubsection{案例：3D文物重建}\label{ux6848ux4f8b2ux5386ux53f2ux8fdbux7a0bux6d41ux7a0bux56fe}}
 \textbf{背景}：数字化复原破损的唐三彩马俑
 
 \textbf{实现方法}：
@@ -12,21 +9,11 @@
 \def\labelenumi{\arabic{enumi}.}
 \item
   \textbf{提示词设计} 
-  \prompt{``写Blender Python脚本：创建唐代马俑基础模型，特征包含：''
-
-  \begin{itemize}
-  
-  \item
-    颈部弯曲呈S型
-  \item
-    马鞍有莲花纹浮雕
-  \item
-    表面材质为陶器质感
-  \end{itemize}
-  }
+  \prompt{写Blender Python脚本：创建唐代马俑基础模型，特征包含：颈部弯曲呈S型，马鞍有莲花纹浮雕，表面材质为陶器质感}
 \item
   \textbf{GPT生成核心代码}
-
+\begin{gptbox}
+\small{
 \begin{lstlisting}
 # 创建马体基础形态
 bpy.ops.mesh.primitive_cylinder_add(vertices=64)
@@ -37,24 +24,29 @@ material.use_nodes = True
 bsdf = material.node_tree.nodes["Principled BSDF"]
 bsdf.inputs['Base Color'].default_value = (0.8,0.3,0.1,1) # 橙红色陶釉
 \end{lstlisting}
+}
+\end{gptbox}
 \item
-  \textbf{细节优化} ``如何用几何节点创建破损效果？'' GPT回复：
-
+  \textbf{细节优化} 
+  \prompt{如何用几何节点创建破损效果？} 
+  
+  GPT回复：
+\begin{gptbox}
+\small{
 \begin{lstlisting}
 # 添加几何节点修改器
 node_group = bpy.data.node_groups.new("Crack_Effect", 'GeometryNodeTree')
 # 设置噪波纹理控制顶点位移...
 \end{lstlisting}
+}
+\end{gptbox}
 \end{enumerate}
-
-
 
 \hypertarget{ux4f26ux7406ux4e0eux6ce8ux610fux4e8bux9879}{%
 \subsection{伦理与注意事项}\label{ux4f26ux7406ux4e0eux6ce8ux610fux4e8bux9879}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-
 \item
   \textbf{版权声明}：AI生成内容需标注来源
 \item
