@@ -39,7 +39,7 @@ API）
 \def\labelenumi{\arabic{enumi}.}
 \item
   \textbf{剧本生成}
-  Prompt：``生成3分钟的郑和下西洋动画剧本，包含船队出发、海上航行、异国贸易三个场景''
+  Prompt：\prompt{``生成3分钟的郑和下西洋动画剧本，包含船队出发、海上航行、异国贸易三个场景''}
 
   GPT输出：
 
@@ -49,7 +49,7 @@ API）
 \end{lstlisting}
 \item
   \textbf{分镜脚本}
-  Prompt：``将上述剧本转为Blender分镜脚本，包含镜头角度、时长、物体运动参数''
+  Prompt：\prompt{``将上述剧本转为Blender分镜脚本，包含镜头角度、时长、物体运动参数''}
 
   GPT输出：
 
@@ -63,8 +63,8 @@ ship.animation_keyframes = [
 ]
 \end{lstlisting}
 \item
-  \textbf{自动生成代码} Prompt：``写Blender
-  Python脚本创建明代宝船模型，长44丈（按1:100比例）''
+  \textbf{自动生成代码} Prompt：
+  \prompt{``写Blender Python脚本创建明代宝船模型，长44丈（按1:100比例）''}
 
   GPT输出：
 
@@ -92,10 +92,11 @@ mast.location = (0, 0, 4)
 \def\labelenumi{\arabic{enumi}.}
 \item
   \textbf{描述需求}
-  Prompt：``用Mermaid语法绘制佛教从印度经中亚传入中国的流程图，包含主要节点和传播方式''
+  Prompt：
+  \prompt{``用Mermaid语法绘制佛教从印度经中亚传入中国的流程图，包含主要节点和传播方式''}
 \item
   \textbf{获得代码} GPT输出：
-
+\gpt{
 \begin{verbatim}
 graph LR
  A[印度那烂陀寺] -->|法显陆路取经| B[龟兹]
@@ -104,6 +105,7 @@ graph LR
  C --> E[长安大雁塔]
  D --> E
 \end{verbatim}
+}
 \item
   \textbf{实时渲染}：将代码粘贴至Markdown编辑器或Mermaid Live
   Editor，立即生成矢量图
@@ -122,8 +124,8 @@ graph LR
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{提示词设计} ``写Blender
-  Python脚本：创建唐代马俑基础模型，特征包含：''
+  \textbf{提示词设计} 
+  \prompt{``写Blender Python脚本：创建唐代马俑基础模型，特征包含：''
 
   \begin{itemize}
   
@@ -134,6 +136,7 @@ graph LR
   \item
     表面材质为陶器质感
   \end{itemize}
+  }
 \item
   \textbf{GPT生成核心代码}
 

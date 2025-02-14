@@ -55,32 +55,43 @@
     \end{enumerate}
 }
 
-\NewDocumentCommand \refalg    { m }{Algorithm~\ref{#1}}
-\NewDocumentCommand \refequ    { m }{Equation~\ref{#1}}
-\NewDocumentCommand \reffig    { m }{Figure~\ref{#1}}
-\NewDocumentCommand \reftab    { m }{Table~\ref{#1}}
-\NewDocumentCommand \refsec    { m }{第\ref{#1}节}
-\NewDocumentCommand \refapp    { m }{Appendix \ref{#1}}
-\NewDocumentCommand \refdef    { m }{Definition \ref{#1}}
-\NewDocumentCommand \refthm    { m }{Theorem \ref{#1}}
-\NewDocumentCommand \refpro    { m }{Proposition \ref{#1}}
-\NewDocumentCommand \reflem    { m }{Lemma \ref{#1}}
-\NewDocumentCommand \refrem    { m }{Remark \ref{#1}}
+\NewDocumentCommand \refalg    { m }{算法~\ref{#1}}
+\NewDocumentCommand \refequ    { m }{公式~\ref{#1}}
+\NewDocumentCommand \reffig    { m }{图~\ref{#1}}
+\NewDocumentCommand \reftab    { m }{表~\ref{#1}}
+\NewDocumentCommand \refsec    { m }{章节\ref{#1}}
+\NewDocumentCommand \refapp    { m }{附录 \ref{#1}}
+\NewDocumentCommand \refdef    { m }{定义 \ref{#1}}
+\NewDocumentCommand \refthm    { m }{定理 \ref{#1}}
+\NewDocumentCommand \refpro    { m }{命题 \ref{#1}}
+\NewDocumentCommand \reflem    { m }{引理 \ref{#1}}
+\NewDocumentCommand \refrem    { m }{备注 \ref{#1}}
 
 \NewDocumentCommand \hlt       { D[]{blue} m }{\sethlcolor{#1} \hl{#2}}
 
 
 % User-defined commands
-\newcommand{\prompt}[1]{
+\NewDocumentCommand \prompt    { m }{
 \begin{promptbox}
-s \footnotesize{#1}
+\footnotesize{#1}
 \end{promptbox}
 }
-\newcommand{\gpt}[1]{
+\NewDocumentCommand \gpt       { m }{
 \begin{gptbox}
-s \footnotesize{#1}
+\footnotesize{#1}
 \end{gptbox}
 }
+
+% \newcommand{\prompt}[1]{
+% \begin{promptbox}
+% s \footnotesize{#1}
+% \end{promptbox}
+% }
+% \newcommand{\gpt}[1]{
+% \begin{gptbox}
+% s \footnotesize{#1}
+% \end{gptbox}
+% }
 
 \NewDocumentCommand \gptc { D[]{cyan} m }{ \textcolor{#1}{#2} }
 

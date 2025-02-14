@@ -52,19 +52,19 @@
 
 
 % chatting box
-\tcbuselibrary{breakable} %breakable：支持跨页
+\tcbuselibrary{breakable, listings} %breakable：支持跨页
 \newtcolorbox[
-    % auto counter, 
-    % number within=section, 
-    list type=subsubsection, 
+    auto counter, 
+    number within=section, 
+    list type=section, 
     list inside=toc]{promptbox}[1]{
         colback=white, 
         colframe=g1, %背景和线条颜色
         colbacktitle=g1, 
         coltitle=white, %标题框的背景和线条颜色 
         fonttitle=\bfseries, 
-        title={读者 \thetcbcounter}, 
-        list entry={读者 \thetcbcounter\quad}, %标题
+        title={读者提问 \thetcbcounter}, 
+        list entry={读者提问 \thetcbcounter\quad}, %标题
         breakable, %支持跨页
         before upper={\parindent10pt\noindent},  % 支持缩进。\noindent：首行不缩进
         left = 1 mm, %文字离线框左边的边距
@@ -79,17 +79,17 @@
 }
 
 \newtcolorbox[
-    % auto counter, 
-    % number within=section, 
-    list type=subsubsection, 
+    auto counter, 
+    number within=section, 
+    list type=section, 
     list inside=toc]{gptbox}[1]{
         colback=white, 
         colframe=b1, %背景和线条颜色
         colbacktitle=b1, 
         coltitle=white, %标题框的背景和线条颜色 
         fonttitle=\bfseries, 
-        title={AI \thetcbcounter}, 
-        list entry={AI \thetcbcounter\quad}, %标题
+        title={AI作答 \thetcbcounter}, 
+        list entry={AI作答 \thetcbcounter\quad}, %标题
         breakable, %支持跨页
         before upper={\parindent10pt\noindent},  % 支持缩进。\noindent：首行不缩进
         left = 1 mm, %文字离线框左边的边距
@@ -101,5 +101,17 @@
         % sharp corners, % 直角线框
         % enhanced,frame hidden, % 隐藏线框
         enhanced,drop fuzzy shadow,  % 显示阴影
+}
+
+\lstset{
+    basicstyle=\ttfamily\small,  % 字体和大小
+    commentstyle=\color{gray},  % 注释颜色
+    keywordstyle=\color{blue},  % 关键字颜色
+    stringstyle=\color{red},    % 字符串颜色
+    breaklines=true,            % 自动换行
+    numbers=left,               % 行号在左侧显示
+    numbersep=-10pt,
+    % frame=shadowbox,            % 添加阴影边框
+    % rulesepcolor=\color{gray}   % 边框颜色
 }
 

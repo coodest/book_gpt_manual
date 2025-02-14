@@ -1,5 +1,4 @@
-\hypertarget{gptux4ee3ux7801ux5f00ux53d1ux548cux7f16ux5199ux4ee3ux7801}{%
-  \section{GPT代码开发和编写代码}\label{gptux4ee3ux7801ux5f00ux53d1ux548cux7f16ux5199ux4ee3ux7801}}
+\section{GPT辅助开发与代码编写}\label{sec:gpt-code}
 
 
 在这个数字化时代，编程已经成为连接人类智慧与机器世界的桥梁。从智能手机到人工智能，每一行代码都在构建着我们未来的数字文明。但编程并非易事，它需要深奥的知识、严谨的逻辑和丰富的经验。
@@ -8,334 +7,223 @@
 
 本节将带读者进入这个激动人心的技术领域，探索GPT如何成为每一位开发者的强大助力。无论您是编程新手还是经验丰富的开发者，都将在这里发现新的可能性，开启代码创作的新纪元。
 
-\hypertarget{ux4f7fux7528gptux8fdbux884cux4ee3ux7801ux5f00ux53d1}{%
-  \subsection{使用GPT进行代码开发}\label{ux4f7fux7528gptux8fdbux884cux4ee3ux7801ux5f00ux53d1}}
+\subsection{使用GPT进行代码开发}\label{sec:gpt-dev}
 
-\hypertarget{ux80ccux666fux4e0eux6311ux6218}{%
-  \subsubsection{背景与挑战}\label{ux80ccux666fux4e0eux6311ux6218}}
+在传统的软件开发过程中，开发者面临着一系列复杂且相互关联的任务。首先，需求理解是软件开发的起点，开发者需要将业务需求准确地转化为技术实现的方案。这一过程不仅要求开发者具备对业务的深刻洞察力，还需要他们能够将非技术性的需求转化为清晰、可操作的技术目标。随后，系统设计阶段要求开发者规划整个系统的架构和模块划分，这需要他们在宏观层面把握系统的整体结构，同时确保各个模块之间的协同性和可扩展性。编码实现阶段则是将设计转化为实际代码的过程，开发者需要编写高质量的代码，以确保软件的性能和可靠性。最后，测试与维护阶段是软件开发的收尾环节，开发者需要确保代码的稳定性和可维护性，以便在软件的生命周期中持续优化和更新。这些环节不仅耗时耗力，还要求开发者具备跨领域的知识，涉及业务理解、架构设计、编程技能以及质量保证等多个方面。
 
-在传统的软件开发过程中，开发者需要面对一系列复杂的任务：
+然而，随着人工智能技术的飞速发展，特别是像 GPT 这样的大型语言模型的出现，为解决这些传统软件开发中的难题提供了新的思路和方法。这些模型能够通过自然语言理解与生成的能力，辅助开发者在需求理解阶段更准确地把握业务需求，甚至自动生成初步的设计方案和代码框架。在测试与维护阶段，它们也能提供自动化测试脚本生成和代码优化建议等支持，从而显著提高软件开发的效率和质量。
 
-\begin{itemize}
-  \item
-        \textbf{需求理解}：将业务需求转化为技术实现
-  \item
-        \textbf{系统设计}：规划系统的架构和模块
-  \item
-        \textbf{编码实现}：编写高质量的代码
-  \item
-        \textbf{测试维护}：确保代码的稳定性和可维护性
-\end{itemize}
+GPT 作为一种先进的人工智能语言模型，正在通过多种方式深刻地改变传统的软件开发模式。首先，它能够实现自动化生成文档的功能，这使得开发者可以高效地根据现有代码自动生成 API 说明和用户手册等文档资料。这种自动化文档生成不仅节省了开发者在文档编写上的大量时间，还确保了文档与代码的一致性和准确性，从而提高了开发效率和软件交付的质量。
+其次，GPT 在智能代码审查方面发挥着重要作用。它能够对代码进行深度分析，提供有价值的改进意见，并帮助开发者发现潜在的问题。这种智能审查功能类似于一个虚拟的代码导师，能够在开发过程中及时指出代码中的不足之处，从而帮助开发者优化代码质量，减少错误和漏洞。
+此外，GPT 还支持快速原型开发。开发者只需提供需求描述，GPT 就能够快速生成初始的代码框架。这种能力极大地缩短了从需求分析到代码实现的时间，使得开发者能够更快速地验证想法并进行迭代开发。快速原型开发不仅提高了开发效率，还降低了项目初期的风险，使团队能够更快地响应市场变化。
+最后，GPT 提供了跨语言支持功能，能够在不同编程语言之间进行代码转换和适配。这一功能对于多语言开发环境尤为重要，它使得开发者能够在不同语言之间无缝切换，减少了因语言差异带来的开发障碍。跨语言支持不仅提高了开发的灵活性，还促进了不同技术栈之间的协作和整合。
 
-这些环节不仅耗时耗力，还需要开发者具备跨领域的知识。GPT的出现为解决这些问题提供了新的思路。
+因此，选择 GPT 是因为它能够显著提高开发效率，减少重复性工作并加速流程；通过智能检查提升代码质量，增强稳定性和可维护性；有效连接业务需求与技术实现，弥合二者之间的鸿沟；同时为创新提供可能，探索传统方法难以触及的解决方案，从而推动软件开发向更高层次的效率、质量和创新能力迈进。这些功能不仅提高了开发效率，还提升了软件的整体质量，为软件开发领域带来了新的可能性和机遇。
 
-\hypertarget{gptux5982ux4f55ux52a9ux529bux4ee3ux7801ux5f00ux53d1}{%
-  \subsubsection{GPT如何助力代码开发}\label{gptux5982ux4f55ux52a9ux529bux4ee3ux7801ux5f00ux53d1}}
+下面通过实际的例子来展示GPT在开发中的应用。以网站开发为例，先介绍生成API文档，由用户输入代码片段，由GPT输出详细的接口说明：
 
-GPT通过以下方式改变传统的开发模式：
+\begin{promptbox}
+\small{
+\begin{lstlisting}[language=Python]
+    // 用户输入一段REST API的代码
+    GET /users
+    Response:
+    \{
+        "users": [
+            {"id": 1, "name": "Alice"},
+            {"id": 2, "name": "Bob"}
+        ]
+    \}
+\end{lstlisting}}
+\end{promptbox}
 
-\begin{enumerate}
-  \def\labelenumi{\arabic{enumi}.}
-  \item
-        \textbf{自动化生成文档}：根据现有代码自动生成API说明、用户手册
-  \item
-        \textbf{智能代码审查}：提供代码改进意见，发现潜在问题
-  \item
-        \textbf{快速原型开发}：根据需求描述快速生成初始代码框架
-  \item
-        \textbf{跨语言支持}：在不同编程语言之间进行转换和适配
-\end{enumerate}
+\begin{gptbox}
+\small{
+\begin{lstlisting}[language=Python]
+    // GPT生成的API文档
+    ### 用户管理接口
+    
+    #### 获取用户列表
+    ```http
+    GET /api/users
+    
+    
+    #### 响应格式
+    \{
+        "users": [
+            {"id": number, "name": string}
+        ]
+    \}
 
-\hypertarget{ux4e3aux4ec0ux4e48ux9009ux62e9gpt}{%
-  \subsubsection{为什么选择GPT？}\label{ux4e3aux4ec0ux4e48ux9009ux62e9gpt}}
-
-\begin{enumerate}
-  \def\labelenumi{\arabic{enumi}.}
-  \item
-        提高效率：减少重复性工作，加速开发流程
-  \item
-        增强质量：通过智能检查提升代码稳定性
-  \item
-        跨越鸿沟：连接业务需求与技术实现
-  \item
-        创新可能：探索传统方法难以触及的解决方案
-\end{enumerate}
-
-\hypertarget{ux5b9eux4f8bux6f14ux793agptux5728ux5f00ux53d1ux4e2dux7684ux5e94ux7528}{%
-  \subsubsection{实例演示：GPT在开发中的应用}\label{ux5b9eux4f8bux6f14ux793agptux5728ux5f00ux53d1ux4e2dux7684ux5e94ux7528}}
-
-\begin{enumerate}
-  \def\labelenumi{\arabic{enumi}.}
-  \item
-        \textbf{生成API文档}
-
-        \begin{itemize}
-          \item
-                输入代码片段，输出详细的接口说明：
-        \end{itemize}
-
-        \begin{lstlisting}
-// 用户输入一段REST API的代码
-GET /users
-Response:
-{
-    "users": [
-        {"id": 1, "name": "Alice"},
-        {"id": 2, "name": "Bob"}
-    ]
+    #### 错误码
+    401: 未认证
+    500: 内部错误
+    ...
+\end{lstlisting}
 }
+\end{gptbox}
 
-// GPT生成的API文档
-### 用户管理接口
 
-#### 获取用户列表
-```http
-GET /api/users
+除此之外，对于已经编写好的代码，用户还可以使用GPT对代码审查与优化，用户原始代码输入如下：
+
+\begin{promptbox}
+\small{\begin{lstlisting}[language=Python]
+    # 用户输入的原始代码
+    def calculate_average(numbers):
+        sum = 0
+        for number in numbers:
+            sum += number
+        average = sum / len(numbers)
+        return average
+\end{lstlisting}}
+\end{promptbox}
+
+\begin{gptbox}
+\small{
+\begin{lstlisting}[language=Python]
+    # GPT建议的优化版本
+    def calculate_average(numbers):
+        """计算数字列表的平均值"""
+        if not numbers:
+            return 0.0
+        return sum(numbers) / len(numbers)
 \end{lstlisting}
-
-        响应格式
-
-        \begin{lstlisting}
-{
-    "users": [
-        {"id": number, "name": string}
-    ]
 }
+\end{gptbox}
+
+快速原型开发是GPT在代码开发的重要应用，体现了GPT独立完成开发项目的能力。从用户需开始，描述如下：
+
+\prompt{需要一个在线投票系统，用户可以创建投票、查看结果统计。}
+
+
+\begin{gptbox}
+\small{
+\begin{lstlisting}[language=Python]
+    # models.py
+    class Poll(models.Model):
+        title = models.CharField(max_length=200)
+        description = models.TextField()
+        created_at = models.DateTimeField(auto_now_add=True)
+        votes = models.ManyToManyField(User, through='Vote')
+    
+    class Vote(models.Model):
+        user = models.ForeignKey(User, on_delete=models.CASCADE)
+        poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
+        choice = models.CharField(max_length=200)
+    
+    # views.py
+    @login_required
+    def create_poll(request):
+        if request.method == 'POST':
+            form = PollForm(request.POST)
+            if form.is_valid():
+                poll = form.save(commit=False)
+                poll.created_by = request.user
+                poll.save()
+                return redirect('poll_list')
+        else:
+            form = PollForm()
+        return render(request, 'create_poll.html', {'form': form})
 \end{lstlisting}
-
-        错误码
-
-        \begin{itemize}
-          \item
-                401: 未认证
-          \item
-                500: 内部错误
-          \item
-                \ldots{}\ldots{}.
-        \end{itemize}
-
-  \item
-        \textbf{代码审查与优化}
-
-        \begin{lstlisting}
-# 用户输入的原始代码
-def calculate_average(numbers):
-    sum = 0
-    for number in numbers:
-        sum += number
-    average = sum / len(numbers)
-    return average
-
-# GPT建议的优化版本
-def calculate_average(numbers):
-    """计算数字列表的平均值"""
-    if not numbers:
-        return 0.0
-    return sum(numbers) / len(numbers)
-\end{lstlisting}
-  \item
-        \textbf{快速原型开发}
-
-        \begin{itemize}
-          \item
-                用户需求描述：
-                ``需要一个在线投票系统，用户可以创建投票、查看结果统计。''
-          \item
-                GPT生成的代码框架：
-
-                \begin{lstlisting}
-# models.py
-class Poll(models.Model):
-    title = models.CharField(max_length=200)
-    description = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    votes = models.ManyToManyField(User, through='Vote')
-
-class Vote(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    poll = models.ForeignKey(Poll, on_delete=models.CASCADE)
-    choice = models.CharField(max_length=200)
-
-# views.py
-@login_required
-def create_poll(request):
-    if request.method == 'POST':
-        form = PollForm(request.POST)
-        if form.is_valid():
-            poll = form.save(commit=False)
-            poll.created_by = request.user
-            poll.save()
-            return redirect('poll_list')
-    else:
-        form = PollForm()
-    return render(request, 'create_poll.html', {'form': form})
-\end{lstlisting}
-        \end{itemize}
-\end{enumerate}
-
-\hypertarget{ux4f7fux7528gptux8fdbux884cux4ee3ux7801ux7f16ux5199}{%
-  \subsection{使用GPT进行代码编写}\label{ux4f7fux7528gptux8fdbux884cux4ee3ux7801ux7f16ux5199}}
-
-\hypertarget{ux80ccux666fux4e0eux6311ux6218-1}{%
-  \subsubsection{背景与挑战}\label{ux80ccux666fux4e0eux6311ux6218-1}}
-
-在日常编程中，开发者常常面临以下难题：
-
-\begin{itemize}
-  \item
-        \textbf{语法错误}：拼写错误、括号不匹配等问题
-  \item
-        \textbf{逻辑问题}：算法实现、条件判断等复杂逻辑
-  \item
-        \textbf{风格统一}：保持代码的一致性和可读性
-  \item
-        \textbf{知识获取}：快速查找API、框架的使用方法
-\end{itemize}
-
-GPT通过强大的语义理解和生成能力，为这些问题提供了创新性的解决方案。
-
-\hypertarget{gptux5982ux4f55ux63d0ux5347ux7f16ux7801ux6548ux7387}{%
-  \subsubsection{GPT如何提升编码效率}\label{gptux5982ux4f55ux63d0ux5347ux7f16ux7801ux6548ux7387}}
-
-\begin{enumerate}
-  \def\labelenumi{\arabic{enumi}.}
-
-  \item
-        \textbf{智能代码补全}：根据上下文预测下一步代码
-  \item
-        \textbf{错误修正建议}：识别并提出修复方案
-  \item
-        \textbf{代码风格调整}：统一格式、优化命名
-  \item
-        \textbf{技术文档查找}：即时获取API说明和使用示例
-\end{enumerate}
-
-\hypertarget{ux4e3aux4ec0ux4e48ux9009ux62e9gpt-1}{%
-  \subsubsection{为什么选择GPT？}\label{ux4e3aux4ec0ux4e48ux9009ux62e9gpt-1}}
-
-\begin{enumerate}
-  \def\labelenumi{\arabic{enumi}.}
-
-  \item
-        即时帮助：随时提供编程指导和建议
-  \item
-        提高质量：通过智能纠错提升代码可靠性
-  \item
-        节省时间：减少查找资料的时间成本
-  \item
-        创新思路：启发新的解决方案和实现方式
-\end{enumerate}
-
-\hypertarget{ux5b9eux4f8bux6f14ux793agptux5728ux7f16ux7801ux4e2dux7684ux5e94ux7528}{%
-  \subsubsection{实例演示：GPT在编码中的应用}\label{ux5b9eux4f8bux6f14ux793agptux5728ux7f16ux7801ux4e2dux7684ux5e94ux7528}}
-
-\begin{enumerate}
-  \def\labelenumi{\arabic{enumi}.}
-  \item
-        \textbf{根据自然语言生成代码}
-
-        \begin{itemize}
-          \item
-                用户输入：''我需要一个函数，可以计算两个数的和，并返回结果。''
-          \item
-                GPT生成代码：
-
-                \begin{lstlisting}
-def add_numbers(a, b):
-    """Calculate the sum of two numbers."""
-    return a + b
-\end{lstlisting}
-
-
-        \end{itemize}
-
-  \item
-        \textbf{修复语法错误}
-
-        \begin{itemize}
-          \item
-                用户输入错误代码：
-
-                \begin{lstlisting}
-print("Hello World!)
-\end{lstlisting}
-
-                GPT检测到缺少引号，修正为：
-
-                \begin{lstlisting}
-print("Hello World!")
-\end{lstlisting}
-        \end{itemize}
-  \item
-        \textbf{优化代码逻辑}
-
-        \begin{itemize}
-          \item
-                用户输入低效代码：
-
-                \begin{lstlisting}
-total = 0
-for num in numbers:
-    total += num
-average = total / len(numbers)
-\end{lstlisting}
-
-                GPT建议更简洁的方式：
-
-                \begin{lstlisting}
-average = sum(numbers) / len(numbers) if numbers else 0
-\end{lstlisting}
-        \end{itemize}
-  \item
-        \textbf{代码风格统一}
-
-        \begin{itemize}
-          \item
-                用户输入不一致的命名规范：
-
-                \begin{lstlisting}
-function getUserName(id) {
-    return users[id].name;
 }
+\end{gptbox}
 
-function GetUserEmail(id) {
-    return users[id].email;
-}
+
+\subsection{使用GPT进行代码编写}
+
+在日常编程实践中，开发者常常遭遇诸多棘手难题，这些问题不仅影响开发效率，还可能引发潜在的软件质量问题。首先，语法错误是编程中常见的问题，包括拼写错误、括号不匹配等，这些问题虽小，却能导致程序无法正常编译或运行。其次，逻辑问题往往更具挑战性，例如算法的实现、复杂的条件判断以及程序流程的控制，这些问题需要开发者具备深入的逻辑思维能力和丰富的编程经验。此外，代码风格的统一性也是一个不容忽视的问题，保持代码的一致性和可读性对于团队协作和后续维护至关重要，然而在实际开发中，由于不同开发者编程习惯的差异，代码风格往往难以统一。最后，知识获取也是开发者面临的一大挑战，快速准确地查找 API、框架的使用方法以及相关技术文档，对于高效开发至关重要，但在海量信息中筛选出准确、有用的内容并非易事。
+
+在这种背景下，GPT 的出现为解决上述问题提供了创新性的思路和方法。凭借其强大的语义理解和生成能力，GPT 能够在多个层面为开发者提供支持。它不仅可以帮助开发者快速识别和纠正语法错误，还能通过逻辑分析和代码优化建议，协助解决复杂的逻辑问题。此外，GPT 还能够提供代码风格指南和格式化建议，帮助开发者保持代码的一致性和可读性。更重要的是，GPT 能够快速响应开发者关于 API 和框架使用方法的查询，提供准确的技术信息，从而显著提升开发效率并降低知识获取的门槛。
+
+同时，在软件开发领域，编码效率的提升是开发者不懈追求的目标。GPT 作为一种先进的人工智能工具，为这一目标的实现提供了强有力的支持。首先，GPT 的智能代码补全功能能够根据上下文环境精准预测下一步代码，极大地减少了开发者手动输入代码的时间，同时降低了因拼写错误或语法不规范而导致的编译问题。其次，GPT 能够识别代码中的错误，并提供针对性的修正建议，这不仅帮助开发者快速定位问题，还提升了代码的可靠性和稳定性。此外，GPT 还具备代码风格调整的能力，能够统一代码格式并优化变量命名，从而增强代码的可读性和一致性。最后，GPT 可以即时获取 API 说明和使用示例，为开发者提供技术文档查找的便捷途径，显著减少了在海量信息中搜索所需知识的时间成本。
+
+选择 GPT 作为开发辅助工具，不仅因其能够提供即时帮助，随时为开发者提供编程指导和建议，还在于其能够显著提升代码质量。通过智能纠错功能，GPT 有效减少了潜在的错误，增强了代码的可靠性，从而为软件的稳定性和可维护性奠定了坚实基础。此外，GPT 的使用大幅节省了开发者查找资料的时间成本，使他们能够将更多精力集中在核心逻辑的实现上。更为重要的是，GPT 能够启发开发者探索新的解决方案和实现方式，为软件开发带来创新思路。这些优势共同构成了 GPT 在软件开发领域广泛应用的重要原因，使其成为开发者提升编码效率和质量的得力助手。
+
+为了充分发挥GPT的代码编写能力，下面演示根据自然语言生成代码的过程。
+
+\prompt{我需要一个函数，可以计算两个数的和，并返回结果。}
+
+\begin{gptbox}
+\footnotesize{使用如下代码可以实现上述功能：}
+\small{
+\begin{lstlisting}[language=Python]
+    def add_numbers(a, b):
+        """Calculate the sum of two numbers."""
+        return a + b
 \end{lstlisting}
-
-                GPT调整为一致的驼峰式命名：
-
-                \begin{lstlisting}
-function getUserInfo(id, field) {
-    return users[id][field];
 }
+\end{gptbox}
+
+\prompt{print("Hello World!)这行代码有没有错误？}
+
+\begin{gptbox}
+\footnotesize{检测到缺少引号，应修正为：}
+\small{
+\begin{lstlisting}[language=Python]
+    print("Hello World!")
 \end{lstlisting}
-        \end{itemize}
-\end{enumerate}
+}
+\end{gptbox}
 
-\hypertarget{ux52a8ux624bux8bd5ux8bd5}{%
-  \subsection{动手试试}\label{ux52a8ux624bux8bd5ux8bd5}}
 
-在前面的介绍中，已经有了实例演示的例子，那么现在我们再尝试动手使用GPT写几个小例子吧\textasciitilde{}
+\begin{promptbox}
+\footnotesize{下面的代码效率如何，能不能改进？}
+\small{
+\begin{lstlisting}[language=Python]
+    total = 0
+    for num in numbers:
+        total += num
+    average = total / len(numbers)
+\end{lstlisting}}
+\end{promptbox}
 
-正所谓古人云：``学而不思则罔，思而不学则殆''。
+\begin{gptbox}
+\footnotesize{可以使用更简洁的方式：}
+\small{
+\begin{lstlisting}[language=Python]
+    average = sum(numbers) / len(numbers) if numbers else 0
+\end{lstlisting}
+}
+\end{gptbox}
 
-\hypertarget{ux6469ux65afux5bc6ux7801}{%
-  \subsubsection{摩斯密码}\label{ux6469ux65afux5bc6ux7801}}
 
-\begin{quote}
-  摩尔斯电码（Morse
-  code）也被称作摩斯密码，是一种时通时断的信号代码，通过不同的排列顺序来表达不同的英文字母、数字和标点符号。它发明于1837年，是一种早期的数字化通信形式。不同于现代化的数字通讯，摩尔斯电码只使用零和一两种状态的二进制代码，它的代码包括五种：短促的点信号``・''，保持一定时间的长信号``---''，表示点和划之间的停顿、每个词之间中等的停顿，以及句子之间长的停顿。
-\end{quote}
 
-各位读者肯定在众多影视作品中可以看到，那么现在我们就让GPT来完成一个这样的简单例子。
+\begin{promptbox}
+\footnotesize{帮我统一命名规范}
+\small{
+\begin{lstlisting}[language=Python]
+    function getUserName(id) {
+        return users[id].name;
+    }
+    
+    function GetUserEmail(id) {
+        return users[id].email;
+    }
+\end{lstlisting}}
+\end{promptbox}
 
-用户输入：``现在我想编写一个将自然语言转化为摩斯密码的代码，使用Python代码实现，就以''I
-LIKE U``这个句子为例实现一下。''
+\begin{gptbox}
+\footnotesize{以下是统一后的结果}
+\small{
+\begin{lstlisting}[language=Python]
+    function getUserInfo(id, field) {
+        return users[id][field];
+    }
+\end{lstlisting}
+}
+\end{gptbox}
 
-GPT回复：
+\subsection{动手试试：明文加密}
 
-为了将自然语言句子转换为摩斯密码，我们可以按照以下步骤实现：
+正所谓古人云：``学而不思则罔，思而不学则殆''。在前面的介绍中，已经有了实例演示的例子。那么现在我们再尝试动手使用GPT写几个小例子吧\textasciitilde{}。
+
+\paragraph{摩尔斯电码（Morse code）}也被称作摩斯密码，是一种时通时断的信号代码，通过不同的排列顺序来表达不同的英文字母、数字和标点符号。它发明于1837年，是一种早期的数字化通信形式。不同于现代化的数字通讯，摩尔斯电码只使用零和一两种状态的二进制代码，它的代码包括五种：短促的点信号``・''，保持一定时间的长信号``---''，表示点和划之间的停顿、每个词之间中等的停顿，以及句子之间长的停顿。
+读者往往会在在众多影视作品中可以看到摩尔斯电码，那么现在我们就让GPT来完成一个这样的简单例子。
+
+\prompt{现在我想编写一个将自然语言转化为摩斯密码的代码，使用Python代码实现，就以''I LIKE U``这个句子为例实现一下。}
+
+\begin{gptbox}
+\footnotesize{为了将自然语言句子转换为摩斯密码，我们可以按照以下步骤实现：
 
 \begin{enumerate}
   \def\labelenumi{\arabic{enumi}.}
@@ -348,111 +236,98 @@ GPT回复：
   \item
         \textbf{合并单词间的摩斯码}：使用三个空格分隔不同单词。
 \end{enumerate}
-
 以下是完整的Python代码：
-
-\begin{lstlisting}
-# 创建摩斯密码字典
-mos_codes = {
-    'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 
-    'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 
-    'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 
-    'P': '.--.', 'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 
-    'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--', 
-    'Z': '--..'
 }
-
-# 获取输入并处理
-input_str = input("请输入要转换的句子：").upper()
-cleaned = ''.join([c if c in mos_codes or c == ' ' else '' for c in input_str])
-words = cleaned.split()
-
-# 转换为摩斯码
-morse_words = []
-for word in words:
-    morse_word = [mos_codes[char] for char in word]
-    morse_words.append(' '.join(morse_word))
-
-# 合并单词之间的空格
-final_morse = '   '.join(morse_words)
-print(final_morse)
+\small{
+以下是统一后的结果：
+\begin{lstlisting}[language=Python]
+    # 创建摩斯密码字典
+    mos_codes = {
+        'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 
+        'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 
+        'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 
+        'P': '.--.', 'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 
+        'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--', 
+        'Z': '--..'
+    }
+    
+    # 获取输入并处理
+    input_str = input("请输入要转换的句子：").upper()
+    cleaned = ''.join([c if c in mos_codes or c == ' ' else '' for c in input_str])
+    words = cleaned.split()
+    
+    # 转换为摩斯码
+    morse_words = []
+    for word in words:
+        morse_word = [mos_codes[char] for char in word]
+        morse_words.append(' '.join(morse_word))
+    
+    # 合并单词之间的空格
+    final_morse = '   '.join(morse_words)
+    print(final_morse)
 \end{lstlisting}
-
-\textbf{示例输入输出：}
-
-\begin{itemize}
-  \item
-        输入：``I LIKE U''
-  \item
-        输出：``.. .-.. .. -.- . ..-''
-\end{itemize}
+}
+\end{gptbox}
 
 这段代码能够将输入句子转换为对应的摩斯密码，每个字母用单个空格分隔，单词之间用三个空格分隔。
+通过本地运行代码并输出字符串``I LIKE U''，读者将得到上面实例的最终输出结果``.. .-.. .. -.- . ..-''，如\reffig{fig:morse}所示。
 
-通过我们本地运行，得到了正确的结果：
+\fig[h]{
+    \includegraphics[width=0.7\textwidth]{assets/figures/image-20250210171257118.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+    \caption{摩斯密码输出} %最终文档中希望显示的图片标题
+    \label{fig:morse} %用于文内引用的标签
+}
 
-\centering
-\begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
-  \centering %图片居中
-  \includegraphics[width=0.7\textwidth]{assets/figures/image-20250210171257118.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-  \caption{摩斯密码输出} %最终文档中希望显示的图片标题
-  \label{Fig.main1} %用于文内引用的标签
-\end{figure}%结束环境
+现在读者可以用摩斯密码对你想说的文字进行加密了，读者还可以尝试继续让GPT改进，让这个简单代码不断完善并且可以处理中文相关的信息。
 
-很有意思不是吗？现在你可以用摩斯密码对你想说的话进行加密了，你可以尝试继续让GPT改进，让这个简单代码不断完善并且可以处理中文相关的信息，动手试试看吧！
+\paragraph{恺撒密码（Caesar cipher）}，或称\textbf{恺撒加密}、\textbf{恺撒变换}、\textbf{变换加密}，是一种最简单且最广为人知的加密技术。它是一种替换加密的技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。例如，当偏移量是3的时候，所有的字母A将被替换成D，B变成E，以此类推。这个加密方法是以罗马共和时期恺撒的名字命名的，当年恺撒曾用此方法与其将军们进行联系。
 
-\hypertarget{ux607aux6492ux5bc6ux7801}{%
-  \subsubsection{恺撒密码}\label{ux607aux6492ux5bc6ux7801}}
+这次我们再尝试一个古典密码学中的经典加密，根据苏维托尼乌斯于公元二世纪写的《恺撒传》中的记载，恺撒曾用此方法对重要的军事信息进行加密，它的原理非常简单，就是将所有字母偏移固定的长度，如\reffig{fig:caesar}：
 
-\begin{quote}
-  \textbf{恺撒密码}（英语：Caesar
-  cipher），或称\textbf{恺撒加密}、\textbf{恺撒变换}、\textbf{变换加密}，是一种最简单且最广为人知的加密技术。它是一种替换加密的技术，明文中的所有字母都在字母表上向后（或向前）按照一个固定数目进行偏移后被替换成密文。例如，当偏移量是3的时候，所有的字母A将被替换成D，B变成E，以此类推。这个加密方法是以罗马共和时期恺撒的名字命名的，当年恺撒曾用此方法与其将军们进行联系。
-\end{quote}
-
-这次我们再尝试一个古典密码学中的经典加密，根据苏维托尼乌斯于公元二世纪写的《恺撒传》中的记载，恺撒曾用此方法对重要的军事信息进行加密，它的原理非常简单，就是将所有字母偏移固定的长度，就像下图：
-
-\centering
-\begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
-  \centering %图片居中
-  \includegraphics[width=0.7\textwidth]{assets/figures/image-20250210174403824.png} %插入图片，[]中设置图片大小，{}中是图片文件名
-  \caption{恺撒加密示意图} %最终文档中希望显示的图片标题
-  \label{Fig.main1} %用于文内引用的标签
-\end{figure}%结束环境
+\fig[h]{
+    \includegraphics[width=0.5\textwidth]{assets/figures/image-20250210174403824.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+    \caption{恺撒加密示意图} %最终文档中希望显示的图片标题
+    \label{fig:caesar} %用于文内引用的标签
+}
 
 那么现在我们同样用GPT来实现一个这样简单的例子：
 
-用户输入：
-``现在我想编写一个将自然语言转化为恺撒密码的代码，偏移量为3，使用Python代码实现，就以\texttt{My\ Fault\ forgive\ me\ for\ saying\ I\ like\ you\ here}这个句子为例实现一下。''
+\prompt{现在我想编写一个将自然语言转化为恺撒密码的代码，偏移量为3，使用Python代码实现，就以\texttt{My\ Fault\ forgive\ me\ for\ saying\ I\ like\ you\ here}这个句子为例实现一下。
+}
 
-GPT回复：
-好的！凯撒密码是一种替换加密技术，每个字母在字母表上向后移动固定的位数（这里是3位）。例如，`A'会被转换为'D'，`B'会变成'E'，依此类推。对于字母表的末尾字母（如'X'、`Y'、`Z'），它们会循环回到字母表的开头。
+
+\begin{gptbox}
+\footnotesize{好的！凯撒密码是一种替换加密技术，每个字母在字母表上向后移动固定的位数（这里是3位）。例如，`A'会被转换为'D'，`B'会变成'E'，依此类推。对于字母表的末尾字母（如'X'、`Y'、`Z'），它们会循环回到字母表的开头。
 
 以下是将自然语言转化为凯撒密码的Python代码实现：
-
-\begin{lstlisting}
-def caesar_cipher(text, shift=3):
-    result = []
-    for c in text:
-        if c.isupper():
-            # 处理大写字母
-            new_char = chr((ord(c) - ord('A') + shift) % 26 + ord('A'))
-            result.append(new_char)
-        elif c.islower():
-            # 处理小写字母
-            new_char = chr((ord(c) - ord('a') + shift) % 26 + ord('a'))
-            result.append(new_char)
-        else:
-            # 非字母字符保持不变
-            result.append(c)
-    return ''.join(result)
-
-# 示例句子
-sentence = "My Fault forgive me for saying I like you here"
-encrypted_sentence = caesar_cipher(sentence, shift=3)
-print("加密后的句子:", encrypted_sentence)
+}
+\small{
+以下是统一后的结果：
+\begin{lstlisting}[language=Python]
+    def caesar_cipher(text, shift=3):
+        result = []
+        for c in text:
+            if c.isupper():
+                # 处理大写字母
+                new_char = chr((ord(c) - ord('A') + shift) % 26 + ord('A'))
+                result.append(new_char)
+            elif c.islower():
+                # 处理小写字母
+                new_char = chr((ord(c) - ord('a') + shift) % 26 + ord('a'))
+                result.append(new_char)
+            else:
+                # 非字母字符保持不变
+                result.append(c)
+        return ''.join(result)
+    # 示例句子
+    sentence = "My Fault forgive me for saying I like you here"
+    encrypted_sentence = caesar_cipher(sentence, shift=3)
+    print("加密后的句子:", encrypted_sentence)
 \end{lstlisting}
+}
+\end{gptbox}
 
-\textbf{代码解释：}
+上述代码解释如下：
 
 \begin{enumerate}
   \def\labelenumi{\arabic{enumi}.}
@@ -471,21 +346,12 @@ print("加密后的句子:", encrypted_sentence)
         将所有处理后的字符拼接成最终的加密字符串。
 \end{enumerate}
 
-\textbf{示例运行：}
+最后，通过本地运行代码可以得到最终加密结果。输入句子：``My Fault forgive me for saying I like you here''，加密后的输出为``Pb Idxow irujlyh ph iru vdblqj L olnh brx khuh''，如\reffig{fig:caesar-example}。
 
-输入句子：``My Fault forgive me for saying I like you here''
-加密后的输出会是：``Pb Idxow irujlyh ph iru vdblqj L olnh brx khuh''
-
-这个代码可以将任何自然语言文本转换为凯撒密码，适用于需要简单加密的场景。
-
-通过我们本地运行，得到了正确的结果：
-
-\centering
-\begin{figure}[H] %H为当前位置，!htb为忽略美学标准，htbp为浮动图形
-  \centering %图片居中
-  \includegraphics[width=0.7\textwidth]{assets/figures/image-20250210173814654.png} %插入图片，[]中设置图片大小，{}中是图片文件名
+\fig[h]{
+\includegraphics[width=0.7\textwidth]{assets/figures/image-20250210173814654.png} %插入图片，[]中设置图片大小，{}中是图片文件名
   \caption{恺撒加密输出图} %最终文档中希望显示的图片标题
-  \label{Fig.main1} %用于文内引用的标签
-\end{figure}%结束环境
+  \label{fig:caesar-example} %用于文内引用的标签
+}
 
 Eulooldqw!（Brilliant!）现在你可以用恺撒密码对你想说的话进行加密了，你可以尝试继续让GPT改进，让它可以解密恺撒密码，动手试试看吧！
