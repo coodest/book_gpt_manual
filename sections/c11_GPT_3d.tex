@@ -1,75 +1,78 @@
-\hypertarget{ux6848ux4f8b2ux5386ux53f2ux8fdbux7a0bux6d41ux7a0bux56fe}{%
-\section{AI建模}
-\subsubsection{案例：3D文物重建}\label{ux6848ux4f8b2ux5386ux53f2ux8fdbux7a0bux6d41ux7a0bux56fe}}
-\textbf{背景}：数字化复原破损的唐三彩马俑
+\hypertarget{AIux5efaux6a21}{\section{AI建模}} \subsubsection{案例：基础3D建模}\label{ux6848ux4f8b2ux5386ux53f2ux8fdbux7a0bux6d41ux7a0bux56fe}
 
-\textbf{实现方法}：
+\textbf{背景}：通过AI工具快速实现3D场景原型搭建
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \textbf{提示词设计} 
-  \prompt{写Blender Python脚本：创建唐代马俑基础模型，特征包含：颈部弯曲呈S型，马鞍有莲花纹浮雕，表面材质为陶器质感}
-\item
-  \textbf{GPT生成核心代码}
-\begin{gptbox}
-\small{
+\textbf{实现方法}： \begin{enumerate} \def\labelenumi{\arabic{enumi}.} \item \textbf{提示词设计} \prompt{写Blender Python脚本：创建一个简单立方体，包含基础灯光和摄像机}
+
+\item \textbf{GPT生成核心代码} 
+\begin{gptbox} 
+\small{ 
 \begin{lstlisting}
-# 创建马体基础形态
-bpy.ops.mesh.primitive_cylinder_add(vertices=64)
-bpy.ops.object.modifier_add(type='SUBSURF')
-# 添加纹理
-material = bpy.data.materials.new(name="Tang_Sancai")
-material.use_nodes = True
-bsdf = material.node_tree.nodes["Principled BSDF"]
-bsdf.inputs['Base Color'].default_value = (0.8,0.3,0.1,1) # 橙红色陶釉
+import bpy
+
+# 清空场景
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete(use_global=False)
+
+# 创建立方体
+bpy.ops.mesh.primitive_cube_add(
+    size=2,                # 立方体边长
+    location=(0, 0, 0),    # 中心位置
+    rotation=(0, 0, 0)     # 初始旋转
+)
+cube = bpy.context.object
+cube.name = "Simple_Cube"  # 命名对象
+
+# 创建基础材质
+material = bpy.data.materials.new(name="Cube_Material")
+material.diffuse_color = (0.8, 0.1, 0.1, 1)  # RGBA红色
+cube.data.materials.append(material)
+
+# 设置摄像机
+bpy.ops.object.camera_add(
+    location=(5, -5, 3),   # 摄像机位置
+    rotation=(1.047, 0, 0.785)  # 60度俯角，45度偏角
+)
+bpy.context.scene.camera = bpy.context.object
+
+# 添加灯光
+bpy.ops.object.light_add(
+    type='POINT',
+    location=(3, -3, 5),
+    radius=1.0
+)
+bpy.context.object.data.energy = 500  # 灯光强度
+
+# 设置渲染基础参数
+bpy.context.scene.render.resolution_x = 1280
+bpy.context.scene.render.resolution_y = 720
+
+print("基础立方体场景创建完成！")
+
 \end{lstlisting}
-}
+} 
 \end{gptbox}
-\item
-  \textbf{细节优化} 
-  \prompt{如何用几何节点创建破损效果？} 
-  
-  GPT回复：
-\begin{gptbox}
-\small{
-\begin{lstlisting}
-# 添加几何节点修改器
-node_group = bpy.data.node_groups.new("Crack_Effect", 'GeometryNodeTree')
-# 设置噪波纹理控制顶点位移...
-\end{lstlisting}
-}
-\end{gptbox}
+
+\item \textbf{教学延伸} \prompt{如何修改立方体尺寸和颜色？}
+
+GPT回复： 
+\begin{gptbox} 
+\small{ 
+\begin{itemize} 
+\item 
+修改尺寸：调整
+\verb|size=|参数值 
+\item 修改颜色：改变
+\verb|(0.8, 0.1, 0.1, 1)|的RGB数值 
+\end{itemize} } 
+\end{gptbox} 
 \end{enumerate}
 
-\hypertarget{ux4f26ux7406ux4e0eux6ce8ux610fux4e8bux9879}{%
-\subsection{伦理与注意事项}\label{ux4f26ux7406ux4e0eux6ce8ux610fux4e8bux9879}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \textbf{版权声明}：AI生成内容需标注来源
-\item
-  \textbf{事实核查}：历史细节需对照权威资料
-\item
-  \textbf{创意平衡}：避免过度依赖AI导致同质化
-\end{enumerate}
-
-
-
-\hypertarget{ux53efux89c6ux5316ux5b66ux4e60ux5de5ux5177ux5305}{%
-\subsection{可视化学习工具包}\label{ux53efux89c6ux5316ux5b66ux4e60ux5de5ux5177ux5305}}
-
-\begin{itemize}
-
-\item
-  Blender GPT插件：AI Assistant for Blender（直接对话生成脚本）
-\item
-  流程图协作平台：Diagrams.net + GPT集成
-\item
-  历史模型库：Sketchfab开源3D模型数据库
-\end{itemize}
-
-
-
-这样的结构既保证了专业深度，又通过真实可操作的案例（包含可直接复制使用的代码段）降低学习门槛。建议在每个案例后添加``动手实验室''板块，提供分步骤练习任务，例如：``尝试用GPT生成北宋汴京城的市集场景脚本''。
+\hypertarget{ux5b9eux8df5ux6a21ux5757}{\subsection{动手试试看}} 
+AI提示词示例 
+改变物体形状:
+\prompt{将立方体改为球体}\\
+调整场景光照:
+\prompt{添加三点照明系统} \\
+制作简单动画:
+\prompt{创建旋转动画效果} \\
