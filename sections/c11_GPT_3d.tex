@@ -13,46 +13,46 @@ AI在3D建模中的应用，如同为创意插上了科技的翅膀，为设计�
 \begin{gptbox} 
 \small{ 
 \begin{lstlisting}[language=Python] 
-import bpy
-
-# 清空场景
-bpy.ops.object.select_all(action='SELECT')
-bpy.ops.object.delete(use_global=False)
-
-# 创建立方体
-bpy.ops.mesh.primitive_cube_add(
-    size=2,                # 立方体边长
-    location=(0, 0, 0),    # 中心位置
-    rotation=(0, 0, 0)     # 初始旋转
-)
-cube = bpy.context.object
-cube.name = "Simple_Cube"  # 命名对象
-
-# 创建基础材质
-material = bpy.data.materials.new(name="Cube_Material")
-material.diffuse_color = (0.8, 0.1, 0.1, 1)  # RGBA红色
-cube.data.materials.append(material)
-
-# 设置摄像机
-bpy.ops.object.camera_add(
-    location=(5, -5, 3),   # 摄像机位置
-    rotation=(1.047, 0, 0.785)  # 60度俯角，45度偏角
-)
-bpy.context.scene.camera = bpy.context.object
-
-# 添加灯光
-bpy.ops.object.light_add(
-    type='POINT',
-    location=(3, -3, 5),
-    radius=1.0
-)
-bpy.context.object.data.energy = 500  # 灯光强度
-
-# 设置渲染基础参数
-bpy.context.scene.render.resolution_x = 1280
-bpy.context.scene.render.resolution_y = 720
-
-print("基础立方体场景创建完成！")
+    import bpy
+    
+    # 清空场景
+    bpy.ops.object.select_all(action='SELECT')
+    bpy.ops.object.delete(use_global=False)
+    
+    # 创建立方体
+    bpy.ops.mesh.primitive_cube_add(
+        size=2,                # 立方体边长
+        location=(0, 0, 0),    # 中心位置
+        rotation=(0, 0, 0)     # 初始旋转
+    )
+    cube = bpy.context.object
+    cube.name = "Simple_Cube"  # 命名对象
+    
+    # 创建基础材质
+    material = bpy.data.materials.new(name="Cube_Material")
+    material.diffuse_color = (0.8, 0.1, 0.1, 1)  # RGBA红色
+    cube.data.materials.append(material)
+    
+    # 设置摄像机
+    bpy.ops.object.camera_add(
+        location=(5, -5, 3),   # 摄像机位置
+        rotation=(1.047, 0, 0.785)  # 60度俯角，45度偏角
+    )
+    bpy.context.scene.camera = bpy.context.object
+    
+    # 添加灯光
+    bpy.ops.object.light_add(
+        type='POINT',
+        location=(3, -3, 5),
+        radius=1.0
+    )
+    bpy.context.object.data.energy = 500  # 灯光强度
+    
+    # 设置渲染基础参数
+    bpy.context.scene.render.resolution_x = 1280
+    bpy.context.scene.render.resolution_y = 720
+    
+    print("基础立方体场景创建完成！")
 
 \end{lstlisting}
 } 
@@ -72,47 +72,47 @@ print("基础立方体场景创建完成！")
 \footnotesize{\# 修改立方体大小为3，修改颜色并添加光照强度和灯光颜色：}
 \small{
 \begin{lstlisting}[language=Python]
-import bpy
-
-# 清空场景
-bpy.ops.object.select_all(action='SELECT')
-bpy.ops.object.delete(use_global=False)
-
-# 创建立方体
-bpy.ops.mesh.primitive_cube_add(
-    size=3,                # 立方体边长
-    location=(0, 0, 0),    # 中心位置
-    rotation=(0, 0, 0)     # 初始旋转
-)
-cube = bpy.context.object
-cube.name = "Simple_Cube"  # 命名对象
-
-# 创建基础材质
-material = bpy.data.materials.new(name="Cube_Material")
-material.diffuse_color = (0.2, 0.6, 0.9, 1)  # 蓝色
-cube.data.materials.append(material)
-
-# 设置摄像机
-bpy.ops.object.camera_add(
-    location=(5, -5, 3),   # 摄像机位置
-    rotation=(1.047, 0, 0.785)  # 60度俯角，45度偏角
-)
-bpy.context.scene.camera = bpy.context.object
-
-# 添加灯光
-bpy.ops.object.light_add(
-    type='POINT',
-    location=(3, -3, 5),
-    radius=1.0
-)
-bpy.context.object.data.energy = 1000  # 灯光强度
-bpy.context.object.data.color = (1, 0.9, 0.8)  # 暖色调灯光
-
-# 设置渲染基础参数
-bpy.context.scene.render.resolution_x = 1280
-bpy.context.scene.render.resolution_y = 720
-
-print("蓝色立方体修改完成！")
+    import bpy
+    
+    # 清空场景
+    bpy.ops.object.select_all(action='SELECT')
+    bpy.ops.object.delete(use_global=False)
+    
+    # 创建立方体
+    bpy.ops.mesh.primitive_cube_add(
+        size=3,                # 立方体边长
+        location=(0, 0, 0),    # 中心位置
+        rotation=(0, 0, 0)     # 初始旋转
+    )
+    cube = bpy.context.object
+    cube.name = "Simple_Cube"  # 命名对象
+    
+    # 创建基础材质
+    material = bpy.data.materials.new(name="Cube_Material")
+    material.diffuse_color = (0.2, 0.6, 0.9, 1)  # 蓝色
+    cube.data.materials.append(material)
+    
+    # 设置摄像机
+    bpy.ops.object.camera_add(
+        location=(5, -5, 3),   # 摄像机位置
+        rotation=(1.047, 0, 0.785)  # 60度俯角，45度偏角
+    )
+    bpy.context.scene.camera = bpy.context.object
+    
+    # 添加灯光
+    bpy.ops.object.light_add(
+        type='POINT',
+        location=(3, -3, 5),
+        radius=1.0
+    )
+    bpy.context.object.data.energy = 1000  # 灯光强度
+    bpy.context.object.data.color = (1, 0.9, 0.8)  # 暖色调灯光
+    
+    # 设置渲染基础参数
+    bpy.context.scene.render.resolution_x = 1280
+    bpy.context.scene.render.resolution_y = 720
+    
+    print("蓝色立方体修改完成！")
 
 \end{lstlisting}
 } 
