@@ -11,16 +11,16 @@
 \prompt{设计一座未来主义风格的生态城市中心，融合高科技与可持续发展理念。建筑外观采用流线型结构，表面覆盖智能玻璃幕墙，能够根据天气和光线自动调节透明度。建筑内部设有垂直花园和空中花园，以最大化绿化空间。屋顶配备太阳能板和雨水收集系统，以实现能源自给自足和水资源循环利用。整体风格简洁而富有科技感，同时融入自然元素，营造出人与自然和谐共生的未来城市景观。}
 
 \begin{gptbox}
-\footnotesize{以下是生成的图片：}
+s \footnotesize{以下是生成的图片：}
 \fig[H]{
-    \includegraphics[width=0.7\textwidth]{gc}
+    \includegraphics[width=0.3\textwidth]{gc}
 }
 \end{gptbox}
 
 
 \subsection{图像风格转移}
 
-在探索人工智能辅助图像编辑的前沿领域时，一个值得关注的工具是InstructPix2Pix。该模型由Hugging Face平台上的开发者timbrooks创建，能够根据用户输入的提示词对图像进行修改和变换，从而实现高度定制化的图像生成。用户可以通过访问InstructPix2Pix - a Hugging Face Space by timbrooks进入该模型的交互界面，如\reffig{fig:gc-InstructPix2Pix}所示。
+在探索人工智能辅助图像编辑的前沿领域时，一个值得关注的工具是InstructPix2Pix。该模型由Hugging Face\footnote{\url{https://huggingface.co}}平台上的开发者timbrooks创建，能够根据用户输入的提示词对图像进行修改和变换，从而实现高度定制化的图像生成。用户可以通过访问InstructPix2Pix - a Hugging Face Space by timbrooks进入该模型的交互界面，如\reffig{fig:gc-InstructPix2Pix}所示。
 
 在使用该工具时，用户首先需要上传待修改的图像，这一操作以红色框标出。随后，用户需在蓝色框中输入提示词，以描述期望的图像修改效果。为确保最佳效果，建议使用英语，并尽可能以简洁明了的方式表达需求。此外，界面中的绿色框提供了参数调整选项，其中“Text CFG”和“Image CFG”是两个关键参数。Text CFG用于调节提示词的权重，而Image CFG则用于调整图像本身的权重。用户可以通过对这两个参数的精细调整来实现预期的图像效果。然而，需要注意的是，这两个参数之间必须保持适当的平衡。如果Text CFG权重过高，可能导致生成的图像与原始图像失真；而如果Image CFG权重过高，则可能使生成的图像无法完全符合提示词的要求。因此，用户在使用过程中需要根据具体需求灵活调整参数，以达到理想的效果。
 

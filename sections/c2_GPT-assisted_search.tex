@@ -85,6 +85,28 @@ Learning to Explain Graph Neural Networks
 
 }
 
+\prompt{请帮我在Nature子刊上找最近的关于图神经网络方面的文章}
+
+\gpt{
+    \textbf{近期研究成果:}
+    \begin{itemize}
+        \item{GTAT: Empowering Graph Neural Networks with Cross Attention}
+        \begin{itemize}
+            \item \textbf{期刊}: Scientific Reports
+            \item \textbf{发表日期}: 2025年2月8日
+            \item \textbf{摘要}: 该研究提出了一种新的图神经网络架构，通过引入交叉注意力机制（Cross Attention）来增强图神经网络的性能。交叉注意力机制能够更好地捕捉节点间的复杂关系，提升模型在图分类和节点分类任务中的表现。
+            \item \textbf{链接}: \url{https://www.nature.com/articles/s41598-025-88993-3}
+        \end{itemize}
+        \item{Graph Geometric Algebra Networks for Graph Representation}
+        \begin{itemize}
+            \item \textbf{期刊}: Scientific Reports
+            \item \textbf{发表日期}: 2025年1月2日
+            \item \textbf{摘要}: 该研究探讨了基于几何代数的图神经网络，提出了一种新的图表示学习方法，能够更有效地处理图结构数据。该方法通过几何代数的多维表示，增强了模型对复杂图结构的建模能力。
+            \item \textbf{链接}: \url{https://www.nature.com/articles/s41598-024-84483-0}
+        \end{itemize}
+    \end{itemize}
+}
+
 \prompt{Mamba论文的作者，期刊和发表年月}
 \gpt{
     
@@ -108,26 +130,10 @@ Learning to Explain Graph Neural Networks
 \label{fig:cite-network}
 }
 
-Paper Connect 论文整理助手是另一款强大的AI文献整理工具，能够帮助用户高效地整理和查找学术论文。例如，用户可以请求它在《Nature》子刊上查找最近关于图神经网络方面的文章，如“CGMega: explainable graph neural network framework with attention mechanisms for cancer gene module dissection”，该研究提出了一种基于图注意力机制的深度学习框架，用于癌症基因模块的剖析。此外，它还可以查询《IEEE Transactions on Pattern Analysis and Machine Intelligence》上发表的最新研究，或者在《Journal of Neuroscience》上找到最新的相关文章。对于会议论文，Paper Connect 也能帮助用户查询在 MICCAI 等重要会议上发表的最新成果。通过这些功能，Paper Connect 为研究人员提供了便捷的文献检索服务，节省了大量时间和精力。下面的例子进一步说明了这些。
+Connected Papers\footnote{\url{https://www.connectedpapers.com/}} 论文整理助手是另一款强大的AI文献整理工具，能够帮助用户高效地整理和查找学术论文。Connected Papers 是一款专为研究人员设计的学术论文探索工具，通过可视化图谱帮助用户快速了解某一研究领域的相关文献和脉络。用户可以通过输入论文的DOI、arXiv ID、URL或标题等标识符，生成以该论文为中心的关联图谱，图中的节点代表相关文献，连线表示引用关系。通过这些功能，Paper Connect 为研究人员提供了便捷的文献检索服务，节省了大量时间和精力。下面的例子进一步说明了这些，如\reffig{fig:cp_net}所示。
 
-\prompt{请帮我在Nature子刊上找最近的关于图神经网络方面的文章}
-
-\gpt{
-    \textbf{近期研究成果:}
-    \begin{itemize}
-        \item{GTAT: Empowering Graph Neural Networks with Cross Attention}
-        \begin{itemize}
-            \item \textbf{期刊}: Scientific Reports
-            \item \textbf{发表日期}: 2025年2月8日
-            \item \textbf{摘要}: 该研究提出了一种新的图神经网络架构，通过引入交叉注意力机制（Cross Attention）来增强图神经网络的性能。交叉注意力机制能够更好地捕捉节点间的复杂关系，提升模型在图分类和节点分类任务中的表现。
-            \item \textbf{链接}: \url{https://www.nature.com/articles/s41598-025-88993-3}
-        \end{itemize}
-        \item{Graph Geometric Algebra Networks for Graph Representation}
-        \begin{itemize}
-            \item \textbf{期刊}: Scientific Reports
-            \item \textbf{发表日期}: 2025年1月2日
-            \item \textbf{摘要}: 该研究探讨了基于几何代数的图神经网络，提出了一种新的图表示学习方法，能够更有效地处理图结构数据。该方法通过几何代数的多维表示，增强了模型对复杂图结构的建模能力。
-            \item \textbf{链接}: \url{https://www.nature.com/articles/s41598-024-84483-0}
-        \end{itemize}
-    \end{itemize}
+\fig[h]{
+    \includegraphics[width=0.7\textwidth]{cp}
+    \caption{Connected Papers生成的论文关系网络}
+    \label{fig:cp_net}
 }

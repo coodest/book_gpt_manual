@@ -144,7 +144,7 @@ GPT 作为一种先进的人工智能语言模型，正在通过多种方式深�
 \prompt{我需要一个函数，可以计算两个数的和，并返回结果。}
 
 \begin{gptbox}
-\footnotesize{使用如下代码可以实现上述功能：}
+s \footnotesize{使用如下代码可以实现上述功能：}
 \small{
 \begin{lstlisting}[language=Python]
     def add_numbers(a, b):
@@ -157,7 +157,7 @@ GPT 作为一种先进的人工智能语言模型，正在通过多种方式深�
 \prompt{print("Hello World!)这行代码有没有错误？}
 
 \begin{gptbox}
-\footnotesize{检测到缺少引号，应修正为：}
+s \footnotesize{检测到缺少引号，应修正为：}
 \small{
 \begin{lstlisting}[language=Python]
     print("Hello World!")
@@ -167,7 +167,7 @@ GPT 作为一种先进的人工智能语言模型，正在通过多种方式深�
 
 
 \begin{promptbox}
-\footnotesize{下面的代码效率如何，能不能改进？}
+s \footnotesize{下面的代码效率如何，能不能改进？}
 \small{
 \begin{lstlisting}[language=Python]
     total = 0
@@ -178,7 +178,7 @@ GPT 作为一种先进的人工智能语言模型，正在通过多种方式深�
 \end{promptbox}
 
 \begin{gptbox}
-\footnotesize{可以使用更简洁的方式：}
+s \footnotesize{可以使用更简洁的方式：}
 \small{
 \begin{lstlisting}[language=Python]
     average = sum(numbers) / len(numbers) if numbers else 0
@@ -189,7 +189,7 @@ GPT 作为一种先进的人工智能语言模型，正在通过多种方式深�
 
 
 \begin{promptbox}
-\footnotesize{帮我统一命名规范}
+s \footnotesize{帮我统一命名规范}
 \small{
 \begin{lstlisting}[language=Python]
     function getUserName(id) {
@@ -203,7 +203,7 @@ GPT 作为一种先进的人工智能语言模型，正在通过多种方式深�
 \end{promptbox}
 
 \begin{gptbox}
-\footnotesize{以下是统一后的结果}
+s \footnotesize{以下是统一后的结果}
 \small{
 \begin{lstlisting}[language=Python]
     function getUserInfo(id, field) {
@@ -223,7 +223,8 @@ GPT 作为一种先进的人工智能语言模型，正在通过多种方式深�
 \prompt{现在我想编写一个将自然语言转化为摩斯密码的代码，使用Python代码实现，就以''I LIKE U``这个句子为例实现一下。}
 
 \begin{gptbox}
-\footnotesize{为了将自然语言句子转换为摩斯密码，我们可以按照以下步骤实现：
+s \footnotesize{
+为了将自然语言句子转换为摩斯密码，我们可以按照以下步骤实现：
 
 \begin{enumerate}
   \def\labelenumi{\arabic{enumi}.}
@@ -239,7 +240,6 @@ GPT 作为一种先进的人工智能语言模型，正在通过多种方式深�
 以下是完整的Python代码：
 }
 \small{
-以下是统一后的结果：
 \begin{lstlisting}[language=Python]
     # 创建摩斯密码字典
     mos_codes = {
@@ -297,8 +297,7 @@ GPT 作为一种先进的人工智能语言模型，正在通过多种方式深�
 
 
 \begin{gptbox}
-\footnotesize{好的！凯撒密码是一种替换加密技术，每个字母在字母表上向后移动固定的位数（这里是3位）。例如，`A'会被转换为'D'，`B'会变成'E'，依此类推。对于字母表的末尾字母（如'X'、`Y'、`Z'），它们会循环回到字母表的开头。
-
+s \footnotesize{好的！凯撒密码是一种替换加密技术，每个字母在字母表上向后移动固定的位数（这里是3位）。例如，`A'会被转换为'D'，`B'会变成'E'，依此类推。对于字母表的末尾字母（如'X'、`Y'、`Z'），它们会循环回到字母表的开头。
 以下是将自然语言转化为凯撒密码的Python代码实现：
 }
 \small{
