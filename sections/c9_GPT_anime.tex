@@ -52,58 +52,12 @@ AI动画的崛起，不仅改变了动画的制作方式，更拓展了其应用
 }
 \end{gptbox}
 
-% Generate a script for a 30-second animated short film on the theme of “Zheng He's Voyages to the Western Seas,” including the following three scenes:Departure of the Fleet: Depict the grand scene of Zheng He's fleet setting sail from the port outside Nanjing during the Ming Dynasty.Sea Voyage: Show the fleet navigating through the stormy seas, overcoming challenges in a tense sequence.Foreign Trade: Present the fleet arriving at a foreign port and engaging in prosperous trade with the local people in a friendly manner.The script should be concise and highlight the core plot and atmosphere of each scene, suitable for quick storytelling.
+% Generate a 10-second animated short film on the theme of “Zheng He's Voyages to the Western Seas,” including the following three scenes: Departure of the Fleet: Depict the grand scene of Zheng He's fleet setting sail from the port outside Nanjing during the Ming Dynasty.Sea Voyage: Show the fleet navigating through the stormy seas, overcoming challenges in a tense sequence. Foreign Trade: Present the fleet arriving at a foreign port and engaging in prosperous trade with the local people in a friendly manner. The script should be concise and highlight the core plot and atmosphere of each scene, suitable for quick storytelling.
 
-接着使用AI视频生成工具Pix Verse\footnote{\url{https://aipixverse.com}}，使用上述剧本对应的英文作为提示词得到视频，分别如\reffig{fig:anime-video}所示。
+接着使用AI视频生成工具清影\footnote{\url{https://chatglm.cn}}，使用上述剧本作为提示词得到视频，如\reffig{fig:anime-video}所示。
 
 \fig[h]{
-    \includegraphics[width=0.7\textwidth]{style-select}
+    \includegraphics[width=0.7\textwidth]{gc-video}
     \caption{视频结果}
     \label{fig:anime-video}
 }
-
-% \item
-%   \textbf{分镜脚本}
-%   Prompt：
-%   \prompt{``将上述剧本转为Blender分镜脚本，包含镜头角度、时长、物体运动参数''}
-
-%   GPT输出：
-%   \begin{gptbox}
-%   \small{
-%   \begin{lstlisting}[language=Python]
-%     # 场景1镜头设置
-%     camera.location = (0, -10, 5)
-%     camera.rotation_euler = (radians(60),0,0)
-%     ship.animation_keyframes = [
-%       (1, (0,0,0)), 
-%       (300, (0,15,0)) # 300帧内沿Y轴移动15单位
-%     ]
-%   \end{lstlisting}
-%   }
-%   \end{gptbox}
-% \item
-%   \textbf{自动生成代码} Prompt：
-%   \prompt{``写Blender Python脚本创建明代宝船模型，长44丈（按1:100比例）''}
-
-%   GPT输出：
-
-%   \begin{gptbox}
-%   \small{
-%   \begin{lstlisting}[language=Python]
-%     import bpy
-%     # 创建船体
-%     bpy.ops.mesh.primitive_cylinder_add(radius=2.2, depth=14)
-%     hull = bpy.context.object
-%     hull.name = "Ming_Ship_Hull"
-%     # 添加桅杆
-%     bpy.ops.mesh.primitive_cylinder_add(radius=0.3, height=8)
-%     mast = bpy.context.object
-%     mast.location = (0, 0, 4)
-%   \end{lstlisting}
-%   }
-%   \end{gptbox}
-% \end{enumerate}
-
-
-
-

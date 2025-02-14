@@ -124,11 +124,61 @@ AI在3D建模中的应用，如同为创意插上了科技的翅膀，为设计�
   \label{fig:3d-blue-cube-changed} %用于文内引用的标签
 }
 
-\subsection{动手试试看}
-AI提示词示例 
-改变物体形状:
-\prompt{将立方体改为球体}\\
-调整场景光照:
-\prompt{添加三点照明系统} \\
-制作简单动画:
-\prompt{创建旋转动画效果} \\
+通过上述简单示例，读者已经初步领略到AI在建模中的辅助作用，还有许多细节可以进一步优化和调整，如改变物体形态，增加照明，创建旋转动画等。读者可进一步深入探索其他功能。
+
+% AI提示词示例\\
+% 改变物体形状:
+% \prompt{将立方体改为球体}
+
+% 调整场景光照:
+% \prompt{添加三点照明系统}
+
+% 制作简单动画:
+% \prompt{创建旋转动画效果}
+
+
+
+
+
+
+% \item
+%   \textbf{分镜脚本}
+%   Prompt：
+%   \prompt{``将上述剧本转为Blender分镜脚本，包含镜头角度、时长、物体运动参数''}
+
+%   GPT输出：
+%   \begin{gptbox}
+%   \small{
+%   \begin{lstlisting}[language=Python]
+%     # 场景1镜头设置
+%     camera.location = (0, -10, 5)
+%     camera.rotation_euler = (radians(60),0,0)
+%     ship.animation_keyframes = [
+%       (1, (0,0,0)), 
+%       (300, (0,15,0)) # 300帧内沿Y轴移动15单位
+%     ]
+%   \end{lstlisting}
+%   }
+%   \end{gptbox}
+% \item
+%   \textbf{自动生成代码} Prompt：
+%   \prompt{``写Blender Python脚本创建明代宝船模型，长44丈（按1:100比例）''}
+
+%   GPT输出：
+
+%   \begin{gptbox}
+%   \small{
+%   \begin{lstlisting}[language=Python]
+%     import bpy
+%     # 创建船体
+%     bpy.ops.mesh.primitive_cylinder_add(radius=2.2, depth=14)
+%     hull = bpy.context.object
+%     hull.name = "Ming_Ship_Hull"
+%     # 添加桅杆
+%     bpy.ops.mesh.primitive_cylinder_add(radius=0.3, height=8)
+%     mast = bpy.context.object
+%     mast.location = (0, 0, 4)
+%   \end{lstlisting}
+%   }
+%   \end{gptbox}
+% \end{enumerate}
