@@ -71,27 +71,27 @@
 
 
 % User-defined commands
-\NewDocumentCommand \prompt    { m }{
-\begin{promptbox}
-\footnotesize{#1}
-\end{promptbox}
-}
-\NewDocumentCommand \gpt       { m }{
-\begin{gptbox}
-\footnotesize{#1}
-\end{gptbox}
-}
-
-% \newcommand{\prompt}[1]{
+% \NewDocumentCommand \prompt    { m }{
 % \begin{promptbox}
-% s \footnotesize{#1}
+% \footnotesize{#1}
 % \end{promptbox}
 % }
-% \newcommand{\gpt}[1]{
+% \NewDocumentCommand \gpt       { m }{
 % \begin{gptbox}
-% s \footnotesize{#1}
+% \footnotesize{#1}
 % \end{gptbox}
 % }
+
+\newcommand{\prompt}[1]{
+\begin{promptbox}
+s \footnotesize{#1}
+\end{promptbox}
+}
+\newcommand{\gpt}[1]{
+\begin{gptbox}
+s \footnotesize{#1}
+\end{gptbox}
+}
 
 \NewDocumentCommand \gptc { D[]{cyan} m }{ \textcolor{#1}{#2} }
 
