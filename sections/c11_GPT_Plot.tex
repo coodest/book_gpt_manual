@@ -43,16 +43,21 @@ API）
 
   GPT输出：
 
+\begin{gptbox}
+\small{
 \begin{lstlisting}
 [场景1：南京龙江港] 
 镜头从宝船甲板升起，展现1405年7月的清晨。600名船员正在搬运瓷器、丝绸...
 \end{lstlisting}
+}
+\end{gptbox}
 \item
   \textbf{分镜脚本}
   Prompt：\prompt{``将上述剧本转为Blender分镜脚本，包含镜头角度、时长、物体运动参数''}
 
   GPT输出：
-
+\begin{gptbox}
+\small{
 \begin{lstlisting}
 # 场景1镜头设置
 camera.location = (0, -10, 5)
@@ -62,12 +67,16 @@ ship.animation_keyframes = [
   (300, (0,15,0)) # 300帧内沿Y轴移动15单位
 ]
 \end{lstlisting}
+}
+\end{gptbox}
 \item
   \textbf{自动生成代码} Prompt：
   \prompt{``写Blender Python脚本创建明代宝船模型，长44丈（按1:100比例）''}
 
   GPT输出：
 
+\begin{gptbox}
+\small{
 \begin{lstlisting}
 import bpy
 # 创建船体
@@ -79,6 +88,8 @@ bpy.ops.mesh.primitive_cylinder_add(radius=0.3, height=8)
 mast = bpy.context.object
 mast.location = (0, 0, 4)
 \end{lstlisting}
+}
+\end{gptbox}
 \end{enumerate}
 
 \hypertarget{ux6848ux4f8b2ux5386ux53f2ux8fdbux7a0bux6d41ux7a0bux56fe}{%
@@ -92,11 +103,10 @@ mast.location = (0, 0, 4)
 \def\labelenumi{\arabic{enumi}.}
 \item
   \textbf{描述需求}
-  Prompt：
-  \prompt{``用Mermaid语法绘制佛教从印度经中亚传入中国的流程图，包含主要节点和传播方式''}
+  \prompt{用Mermaid语法绘制佛教从印度经中亚传入中国的流程图，包含主要节点和传播方式}
 \item
   \textbf{获得代码} GPT输出：
-\gpt{
+\begin{gptbox}
 \begin{verbatim}
 graph LR
  A[印度那烂陀寺] -->|法显陆路取经| B[龟兹]
@@ -106,6 +116,7 @@ graph LR
  D --> E
 \end{verbatim}
 }
+\end{gptbox}
 \item
   \textbf{实时渲染}：将代码粘贴至Markdown编辑器或Mermaid Live
   Editor，立即生成矢量图
