@@ -1,0 +1,83 @@
+\hypertarget{ux6848ux4f8b3ux5c06ux62cdux6444ux7684ux7167ux7247ux4feeux6539ux4e3aux52a8ux6f2bux98ceux683c}{%
+
+
+\hypertarget{ux6848ux4f8b43dux6587ux7269ux91cdux5efa}{%
+\subsubsection{案例4：3D文物重建}\label{ux6848ux4f8b43dux6587ux7269ux91cdux5efa}}
+
+\textbf{背景}：数字化复原破损的唐三彩马俑
+
+\textbf{实现方法}：
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{提示词设计} 
+  \prompt{``写Blender Python脚本：创建唐代马俑基础模型，特征包含：''
+
+  \begin{itemize}
+  
+  \item
+    颈部弯曲呈S型
+  \item
+    马鞍有莲花纹浮雕
+  \item
+    表面材质为陶器质感
+  \end{itemize}
+  }
+\item
+  \textbf{GPT生成核心代码}
+
+\begin{lstlisting}
+# 创建马体基础形态
+bpy.ops.mesh.primitive_cylinder_add(vertices=64)
+bpy.ops.object.modifier_add(type='SUBSURF')
+# 添加纹理
+material = bpy.data.materials.new(name="Tang_Sancai")
+material.use_nodes = True
+bsdf = material.node_tree.nodes["Principled BSDF"]
+bsdf.inputs['Base Color'].default_value = (0.8,0.3,0.1,1) # 橙红色陶釉
+\end{lstlisting}
+\item
+  \textbf{细节优化} ``如何用几何节点创建破损效果？'' GPT回复：
+
+\begin{lstlisting}
+# 添加几何节点修改器
+node_group = bpy.data.node_groups.new("Crack_Effect", 'GeometryNodeTree')
+# 设置噪波纹理控制顶点位移...
+\end{lstlisting}
+\end{enumerate}
+
+
+
+\hypertarget{ux4f26ux7406ux4e0eux6ce8ux610fux4e8bux9879}{%
+\subsection{伦理与注意事项}\label{ux4f26ux7406ux4e0eux6ce8ux610fux4e8bux9879}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+
+\item
+  \textbf{版权声明}：AI生成内容需标注来源
+\item
+  \textbf{事实核查}：历史细节需对照权威资料
+\item
+  \textbf{创意平衡}：避免过度依赖AI导致同质化
+\end{enumerate}
+
+
+
+\hypertarget{ux53efux89c6ux5316ux5b66ux4e60ux5de5ux5177ux5305}{%
+\subsection{可视化学习工具包}\label{ux53efux89c6ux5316ux5b66ux4e60ux5de5ux5177ux5305}}
+
+\begin{itemize}
+
+\item
+  Blender GPT插件：AI Assistant for Blender（直接对话生成脚本）
+\item
+  流程图协作平台：Diagrams.net + GPT集成
+\item
+  历史模型库：Sketchfab开源3D模型数据库
+\end{itemize}
+
+
+
+这样的结构既保证了专业深度，又通过真实可操作的案例（包含可直接复制使用的代码段）降低学习门槛。建议在每个案例后添加``动手实验室''板块，提供分步骤练习任务，例如：``尝试用GPT生成北宋汴京城的市集场景脚本''。
